@@ -39,6 +39,12 @@
   font-size: 24px;
 }
 
+.icons-persone {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+
 .select {
   border: none;
   /* font-family: Simplon Norm; */
@@ -62,4 +68,27 @@
   line-height: 24px;
   letter-spacing: 1px;
   text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-mobile {
+    margin-top: 5px;
+    margin-right: 8px;
+    font-size: 50px;
+  }
+  .ul-container {
+    display: none;
+  }
+  .select {
+    display: none;
+  }
+  .icons-persone {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mobile {
+    display: none;
+  }
 }

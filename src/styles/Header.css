@@ -4,9 +4,16 @@
   justify-content: space-between;
   background: rgba(0, 0, 0, 1);
   color: rgba(235, 76, 107, 1);
-  width: Fixed (1, 440px);
+  width: (1, 440px);
   height: 32px;
   padding: 8px 274px 8px 274px;
+}
+
+.header-staring-mobie {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 20px;
 }
 
 .header-staring {
@@ -26,4 +33,29 @@
 .header-icon {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    height: 24px;
+    width: 100%;
+
+    gap: 10px;
+    opacity: 0px;
+  }
+  .header-staring-mobie {
+    display: block;
+  }
+  .header-staring {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* .header-staring {
+    display: block;
+  } */
+  .header-staring-mobie {
+    display: none;
+  }
 }

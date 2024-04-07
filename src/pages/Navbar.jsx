@@ -5,6 +5,8 @@ import { CiSearch } from "react-icons/ci";
 import { GoHeart } from "react-icons/go";
 import { TbShoppingBagMinus } from "react-icons/tb";
 import { IoPersonOutline } from "react-icons/io5";
+import { CiMenuBurger } from "react-icons/ci";
+
 import "../styles/Navbar.css";
 
 const Navbar = () => {
@@ -13,13 +15,16 @@ const Navbar = () => {
       <Header />
       <div className="nav-contariner">
         <div className="nav-items-contariner">
+          <div className="menu-mobile">
+            <CiMenuBurger />
+          </div>
           <img src={logo} alt="" className="nav-logo-img" />
           <h1 className="nav-logo-heading">LOGO</h1>
           <div className="icon-container">
             <CiSearch className="icons" />
             <GoHeart className="icons" />
             <TbShoppingBagMinus className="icons" />
-            <IoPersonOutline className="icons" />
+            <IoPersonOutline className="icons-persone" />
             <select className="select">
               <option>ENG</option>
               <option>TEG</option>

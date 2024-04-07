@@ -55,3 +55,15 @@
   line-height: 16.8px;
   text-align: left;
 }
+
+@media screen and (max-width: 768px) {
+  .productsItems-container {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* .menu-mobile {
+    display: none;
+  } */
+}

@@ -13,6 +13,7 @@ import sock from "../assets/sock.png";
 import ff from "../assets/ff.png";
 import bag2 from "../assets/bag-2.png";
 import haert from "../assets/heart.png";
+
 import "../styles/ProductsItems.css";
 
 const ProductsItems = () => {
