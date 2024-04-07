@@ -85,3 +85,87 @@
   line-height: 40px;
   text-align: right;
 }
+
+.filter-products-container {
+  margin-top: 32px;
+}
+
+.filter-items {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 26px;
+}
+
+.checkbox {
+  background: rgba(255, 255, 255, 1);
+  width: 22px;
+  height: 22px;
+  gap: 0px;
+  border: 0.92px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.filter-items h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-align: left;
+}
+
+.details {
+  margin: 24px 0;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-align: left;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+summary::before {
+  content: "\25BC";
+  float: right;
+  margin-left: 10px;
+}
+
+summary p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+}
+
+.unselect-all {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: rgba(191, 200, 205, 1);
+  text-decoration: underline;
+  margin-top: 24px;
+}
+
+.filter-values {
+  display: flex;
+  gap: 8px;
+  margin: 25px 0 24px 0;
+}
+
+.filter-checkbox {
+  width: 18px;
+  height: 18px;
+  gap: 0px;
+  border: 0.75px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.catergoy {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+}
