@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+
 import { TiTick } from "react-icons/ti";
 
 import "../styles/Products.css";
 import ProductsItems from "./ProductsItems";
 
 const Products = () => {
+  const [showFilter, setShowFilter] = useState(true);
+
+  const onClickshow = () => {
+    setShowFilter(!showFilter);
+  };
+
+  const onClickHide = () => {
+    setShowFilter(!showFilter);
+  };
   return (
     <div className="products-container">
       {/* product heading */}
@@ -23,10 +34,17 @@ const Products = () => {
         <div className="recommended-container">
           <div className="items-container">
             <p className="items">3425 ITEMS</p>
-            <div className="hide-container">
-              <IoIosArrowBack />
-              <p className="filter-heading">HIDE FILTER</p>
-            </div>
+            {showFilter ? (
+              <div className="hide-container" onClick={onClickshow}>
+                <IoIosArrowForward />
+                <p className="filter-heading">SHOW FILTER</p>
+              </div>
+            ) : (
+              <div className="hide-container" onClick={onClickHide}>
+                <IoIosArrowBack />
+                <p className="filter-heading">HIDE FILTER</p>
+              </div>
+            )}
           </div>
           <select className="select-container">
             <option className="recom">
@@ -43,190 +61,194 @@ const Products = () => {
       {/* filter and products */}
       <div className="filter-products-container">
         {/* filter */}
-        <div className="filter-container">
-          <div className="filter-items">
-            <input type="checkbox" className="checkbox" />
-            <h3>CUSTOMIZBLE</h3>
+        {showFilter ? (
+          " "
+        ) : (
+          <div className="filter-container">
+            <div className="filter-items">
+              <input type="checkbox" className="checkbox" />
+              <h3>CUSTOMIZBLE</h3>
+            </div>
+            <hr />
+            {/* details */}
+            <details className="details">
+              <summary>
+                IDEAL FOR <p>All</p>
+              </summary>
+
+              <p className="unselect-all">Unselect all</p>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Men</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Women</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Baby & Kids</p>
+              </div>
+            </details>
+            <hr />
+            <hr />
+            {/* details */}
+            <details className="details">
+              <summary>
+                OCCASION <p>All</p>
+              </summary>
+
+              <p className="unselect-all">Unselect all</p>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Men</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Women</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Baby & Kids</p>
+              </div>
+            </details>
+            <hr />
+            <hr />
+            {/* details */}
+            <details className="details">
+              <summary>
+                WORK <p>All</p>
+              </summary>
+
+              <p className="unselect-all">Unselect all</p>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Men</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Women</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Baby & Kids</p>
+              </div>
+            </details>
+            <hr />
+            <hr />
+            {/* details */}
+            <details className="details">
+              <summary>
+                FABRIC <p>All</p>
+              </summary>
+
+              <p className="unselect-all">Unselect all</p>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Men</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Women</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Baby & Kids</p>
+              </div>
+            </details>
+            <hr />
+
+            <hr />
+            {/* details */}
+            <details className="details">
+              <summary>
+                SEGMENT <p>All</p>
+              </summary>
+
+              <p className="unselect-all">Unselect all</p>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Men</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Women</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Baby & Kids</p>
+              </div>
+            </details>
+            <hr />
+            <hr />
+            {/* details */}
+            <details className="details">
+              <summary>
+                SUITABLE FOR <p>All</p>
+              </summary>
+
+              <p className="unselect-all">Unselect all</p>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Men</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Women</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Baby & Kids</p>
+              </div>
+            </details>
+            <hr />
+            <hr />
+            {/* details */}
+            <details className="details">
+              <summary>
+                RAW MATERIALS<p>All</p>
+              </summary>
+
+              <p className="unselect-all">Unselect all</p>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Men</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Women</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Baby & Kids</p>
+              </div>
+            </details>
+            <hr />
+
+            <hr />
+            {/* details */}
+            <details className="details">
+              <summary>
+                PATTERN <p>All</p>
+              </summary>
+
+              <p className="unselect-all">Unselect all</p>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Men</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Women</p>
+              </div>
+              <div className="filter-values">
+                <input type="checkbox" className="filter-checkbox" />
+                <p className="catergoy">Baby & Kids</p>
+              </div>
+            </details>
+            <hr />
           </div>
-          <hr />
-          {/* details */}
-          <details className="details">
-            <summary>
-              IDEAL FOR <p>All</p>
-            </summary>
-
-            <p className="unselect-all">Unselect all</p>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Men</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Women</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Baby & Kids</p>
-            </div>
-          </details>
-          <hr />
-          <hr />
-          {/* details */}
-          <details className="details">
-            <summary>
-              OCCASION <p>All</p>
-            </summary>
-
-            <p className="unselect-all">Unselect all</p>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Men</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Women</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Baby & Kids</p>
-            </div>
-          </details>
-          <hr />
-          <hr />
-          {/* details */}
-          <details className="details">
-            <summary>
-              WORK <p>All</p>
-            </summary>
-
-            <p className="unselect-all">Unselect all</p>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Men</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Women</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Baby & Kids</p>
-            </div>
-          </details>
-          <hr />
-          <hr />
-          {/* details */}
-          <details className="details">
-            <summary>
-              FABRIC <p>All</p>
-            </summary>
-
-            <p className="unselect-all">Unselect all</p>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Men</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Women</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Baby & Kids</p>
-            </div>
-          </details>
-          <hr />
-
-          <hr />
-          {/* details */}
-          <details className="details">
-            <summary>
-              SEGMENT <p>All</p>
-            </summary>
-
-            <p className="unselect-all">Unselect all</p>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Men</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Women</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Baby & Kids</p>
-            </div>
-          </details>
-          <hr />
-          <hr />
-          {/* details */}
-          <details className="details">
-            <summary>
-              SUITABLE FOR <p>All</p>
-            </summary>
-
-            <p className="unselect-all">Unselect all</p>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Men</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Women</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Baby & Kids</p>
-            </div>
-          </details>
-          <hr />
-          <hr />
-          {/* details */}
-          <details className="details">
-            <summary>
-              RAW MATERIALS<p>All</p>
-            </summary>
-
-            <p className="unselect-all">Unselect all</p>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Men</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Women</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Baby & Kids</p>
-            </div>
-          </details>
-          <hr />
-
-          <hr />
-          {/* details */}
-          <details className="details">
-            <summary>
-              PATTERN <p>All</p>
-            </summary>
-
-            <p className="unselect-all">Unselect all</p>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Men</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Women</p>
-            </div>
-            <div className="filter-values">
-              <input type="checkbox" className="filter-checkbox" />
-              <p className="catergoy">Baby & Kids</p>
-            </div>
-          </details>
-          <hr />
-        </div>
+        )}
         {/* products */}
         <div className="products-container">
           <ProductsItems />

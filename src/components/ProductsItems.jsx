@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { GoHeart } from "react-icons/go";
 import frontPic from "../assets/Front Pic.png";
 import frontpic2 from "../assets/FrontPic2.svg";
@@ -12,9 +12,18 @@ import bagFull from "../assets/bag-full.png";
 import sock from "../assets/sock.png";
 import ff from "../assets/ff.png";
 import bag2 from "../assets/bag-2.png";
+import haert from "../assets/heart.png";
 import "../styles/ProductsItems.css";
 
 const ProductsItems = () => {
+  const [like, setLike] = useState(true);
+
+  const likeImg = () => {
+    setLike(!like);
+  };
+  const unLikeImg = () => {
+    setLike(!like);
+  };
   return (
     <div className="productsItems-container">
       <div>
@@ -25,7 +34,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -36,7 +54,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -47,7 +74,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -58,7 +94,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -69,7 +114,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -80,7 +134,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -91,7 +154,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -102,7 +174,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -113,7 +194,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -124,7 +214,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -135,7 +234,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -146,7 +254,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -157,7 +274,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -168,7 +294,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -179,7 +314,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -190,7 +334,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -201,7 +354,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
       {/*  */}
@@ -212,7 +374,16 @@ const ProductsItems = () => {
           <p className="sin">
             <span>Sign in</span> or Create an account to see pricing
           </p>
-          <GoHeart className="heart" />
+          {like ? (
+            <GoHeart className="heart" onClick={likeImg} />
+          ) : (
+            <img
+              src={haert}
+              alt="like img"
+              onClick={unLikeImg}
+              className="heart"
+            />
+          )}
         </div>
       </div>
     </div>

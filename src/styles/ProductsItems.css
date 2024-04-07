@@ -46,6 +46,7 @@
   height: 24px;
   gap: 0px;
   opacity: 0px;
+  cursor: pointer;
 }
 .sin span {
   text-decoration: underline;
