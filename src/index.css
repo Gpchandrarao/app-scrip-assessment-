@@ -6,3 +6,7 @@
   font-family: "Roboto";
   /* min-height: 100vh; */
 }
+
+hr {
+  border: 1px solid rgba(229, 229, 229, 1);
+}

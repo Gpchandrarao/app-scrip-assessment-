@@ -1,0 +1,87 @@
+.products-container {
+  padding: 0 96px;
+}
+
+.product-heading {
+  margin: 72px 360px 0 356px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.product-heading h1 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.product-heading h4 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  width: 721px;
+  height: 80px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.recommended-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.items-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.items {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+}
+
+.hide-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-heading {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: right;
+  color: rgba(136, 135, 146, 1);
+  text-decoration: underline;
+}
+
+.select-container {
+  border: none;
+}
+
+.recom {
+  height: 324px;
+  width: 235px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  padding: 30px;
+}
+
+.option {
+  padding: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: right;
+}
