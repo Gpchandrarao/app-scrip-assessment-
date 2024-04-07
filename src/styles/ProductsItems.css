@@ -1,0 +1,56 @@
+/* .heart {
+  background-color: red;
+  color: red;
+} */
+
+.productsItems-container {
+  display: grid;
+  grid-template-columns: 35% 35% 35%;
+  gap: 16px;
+  /* flex-wrap: wrap; */
+}
+
+.products-image {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.products-image:hover {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.pxo {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-align: left;
+}
+
+.hart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.sin {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgba(136, 135, 146, 1);
+  margin-top: 8px;
+}
+
+.heart {
+  width: 24px;
+  height: 24px;
+  gap: 0px;
+  opacity: 0px;
+}
+.sin span {
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+}

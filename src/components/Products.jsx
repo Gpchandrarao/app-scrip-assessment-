@@ -3,6 +3,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { TiTick } from "react-icons/ti";
 
 import "../styles/Products.css";
+import ProductsItems from "./ProductsItems";
 
 const Products = () => {
   return (
@@ -227,7 +228,9 @@ const Products = () => {
           <hr />
         </div>
         {/* products */}
-        <div className="products-container">hii</div>
+        <div className="products-container">
+          <ProductsItems />
+        </div>
       </div>
     </div>
   );

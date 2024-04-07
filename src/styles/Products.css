@@ -88,6 +88,12 @@
 
 .filter-products-container {
   margin-top: 32px;
+  display: flex;
+  gap: 16px;
+}
+
+.filter-container {
+  width: 300px;
 }
 
 .filter-items {
