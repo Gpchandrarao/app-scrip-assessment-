@@ -19,6 +19,10 @@ const Products = () => {
   };
   return (
     <div className="products-container">
+      <ul className="mobie-home-container">
+        <li className="mobie-home">HOME |</li>
+        <li className="mobile-shop">SHOP</li>
+      </ul>
       {/* product heading */}
       <div className="product-heading">
         <h1>DISCOVER OUR PRODUCTS</h1>

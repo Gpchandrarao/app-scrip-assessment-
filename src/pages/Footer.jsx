@@ -25,7 +25,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div>
+        <div className="contact">
           <p className="cons">CONTACT US</p>
           <p className="num">+44 221 133 5360</p>
           <p className="custo">customercare@mettamuse.com</p>

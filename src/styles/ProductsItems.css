@@ -60,6 +60,10 @@
   .productsItems-container {
     grid-template-columns: 50% 50%;
   }
+  .products-image {
+    width: 168px;
+    height: 224px;
+  }
 }
 
 @media screen and (min-width: 768px) {

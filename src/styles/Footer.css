@@ -205,3 +205,29 @@
   text-align: center;
   margin-top: 37px;
 }
+
+@media screen and (max-width: 768px) {
+  .start-container {
+    flex-direction: column;
+    align-items: normal;
+  }
+  .contact {
+    margin-top: 20px;
+  }
+  .end-container {
+    /* flex-direction: column;
+    align-items: center; */
+    gap: 30px;
+  }
+  .pay-img-container {
+    flex-direction: column;
+  }
+  .pay-img-container img {
+    width: 35.85px;
+    height: 13.4px;
+    top: 8.57px;
+    left: 7.29px;
+    gap: 0px;
+    opacity: 0px;
+  }
+}

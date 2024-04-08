@@ -186,6 +186,7 @@ summary p {
     padding: 0px 0px 16px 0px;
     gap: 0px;
     opacity: 0px;
+    margin: 15px 20px;
   }
   .product-heading h1 {
     font-size: 24px;
@@ -199,7 +200,33 @@ summary p {
     line-height: 22px;
     text-align: center;
   }
+  .mobie-home-container {
+    width: Fixed (343px) px;
+    height: Hug (46px) px;
+    padding: 16px 0px 16px 0px;
+    gap: 8px;
+    opacity: 0px;
+    display: flex;
+    list-style-type: none;
+  }
+  .mobie-home {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: left;
+    color: rgba(191, 200, 205, 1);
+  }
+  .mobile-shop {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: left;
+    color: rgba(37, 32, 32, 1);
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .mobie-home-container {
+    display: none;
+  }
 }

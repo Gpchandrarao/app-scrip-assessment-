@@ -85,6 +85,23 @@
   .icons-persone {
     display: none;
   }
+  .nav-logo-heading {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24.2px;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+  .nav-logo-img {
+    margin-right: 92px;
+  }
+  .nav-logo-heading {
+    width: 14px;
+    height: 14px;
+    gap: 0px;
+    opacity: 0px;
+    padding-left: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
